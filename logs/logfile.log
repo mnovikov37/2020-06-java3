@@ -1,0 +1,114 @@
+DEBUG 2020-07-08 22:16:29 [main] Chat.MyServer (MyServer.java:29) - Запуск сервера...
+DEBUG 2020-07-08 22:16:29 [main] Chat.MyServer (MyServer.java:31) - Запуск сервиса авторизации...
+DEBUG 2020-07-08 22:16:30 [main] Chat.auth.DatabaseAuthService (DatabaseAuthService.java:23) - Сервис авторизации запущен.
+DEBUG 2020-07-08 22:16:30 [main] Chat.MyServer (MyServer.java:34) - Запуск сервиса модерации...
+DEBUG 2020-07-08 22:16:30 [main] Chat.MyServer (MyServer.java:36) - Сервис модерации запущен.
+DEBUG 2020-07-08 22:16:30 [main] Chat.MyServer (MyServer.java:38) - Сервер запущен.
+DEBUG 2020-07-08 22:16:30 [main] Chat.MyServer (MyServer.java:40) - Ожидание подключения клиента...
+DEBUG 2020-07-08 22:17:12 [main] Chat.ClientHandler (ClientHandler.java:38) - Создание нового клиентского интерфейса...
+DEBUG 2020-07-08 22:17:12 [main] Chat.MyServer (MyServer.java:43) - Клиентское подключение создано.
+DEBUG 2020-07-08 22:17:12 [main] Chat.MyServer (MyServer.java:40) - Ожидание подключения клиента...
+DEBUG 2020-07-08 22:17:26 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:146) - Клиент Socket[addr=/127.0.0.1,port=49933,localport=8189]: запрос авторизации с ником login1 и паролем password1
+INFO  2020-07-08 22:17:26 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:151) - Клиент Socket[addr=/127.0.0.1,port=49933,localport=8189] успешно прошёл авторизацию как nick1
+INFO  2020-07-08 22:17:26 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: nick1 is in chat @22:17
+DEBUG 2020-07-08 22:17:26 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: nick1 is in chat @22:17
+INFO  2020-07-08 22:17:26 [pool-2-thread-1] Chat.MyServer (MyServer.java:67) - nick1 внесён в список клиентов.
+INFO  2020-07-08 22:17:26 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: /clients nick1
+DEBUG 2020-07-08 22:17:26 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick1: /clients nick1
+DEBUG 2020-07-08 22:17:26 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: /clients nick1
+DEBUG 2020-07-08 22:17:26 [pool-2-thread-1] Chat.MyServer (MyServer.java:88) - Актуальный список клиентов разослан.
+DEBUG 2020-07-08 22:17:40 [main] Chat.ClientHandler (ClientHandler.java:38) - Создание нового клиентского интерфейса...
+DEBUG 2020-07-08 22:17:40 [main] Chat.MyServer (MyServer.java:43) - Клиентское подключение создано.
+DEBUG 2020-07-08 22:17:40 [main] Chat.MyServer (MyServer.java:40) - Ожидание подключения клиента...
+DEBUG 2020-07-08 22:19:48 [pool-2-thread-2] Chat.ClientHandler (ClientHandler.java:146) - Клиент Socket[addr=/127.0.0.1,port=49943,localport=8189]: запрос авторизации с ником login1 и паролем password1
+WARN  2020-07-08 22:19:48 [pool-2-thread-2] Chat.MyServer (MyServer.java:94) - Клиент nick1 пытается залогиниться повторно.
+DEBUG 2020-07-08 22:20:41 [main] Chat.ClientHandler (ClientHandler.java:38) - Создание нового клиентского интерфейса...
+DEBUG 2020-07-08 22:20:41 [main] Chat.MyServer (MyServer.java:43) - Клиентское подключение создано.
+DEBUG 2020-07-08 22:20:41 [main] Chat.MyServer (MyServer.java:40) - Ожидание подключения клиента...
+DEBUG 2020-07-08 22:20:57 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:146) - Клиент Socket[addr=/127.0.0.1,port=49974,localport=8189]: запрос авторизации с ником login2 и паролем password2
+INFO  2020-07-08 22:20:57 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:151) - Клиент Socket[addr=/127.0.0.1,port=49974,localport=8189] успешно прошёл авторизацию как nick2
+INFO  2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:74) - Отправка всем: nick2 is in chat @22:20
+DEBUG 2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:77) -   Клиенту nick1: nick2 is in chat @22:20
+DEBUG 2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: nick2 is in chat @22:20
+INFO  2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:67) - nick2 внесён в список клиентов.
+INFO  2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:74) - Отправка всем: /clients nick1 nick2
+DEBUG 2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:77) -   Клиенту nick1: /clients nick1 nick2
+DEBUG 2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: /clients nick1 nick2
+DEBUG 2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: /clients nick1 nick2
+DEBUG 2020-07-08 22:20:57 [pool-2-thread-3] Chat.MyServer (MyServer.java:88) - Актуальный список клиентов разослан.
+INFO  2020-07-08 22:22:44 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick1: /alternick nick0
+DEBUG 2020-07-08 22:22:44 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:95) - Клиент nick1: запрос на смену ника на nick0
+DEBUG 2020-07-08 22:22:44 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:63) - Клиент nick1: успешная смена ника на nick0
+INFO  2020-07-08 22:22:44 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: nick1 now is nick0 @22:22
+DEBUG 2020-07-08 22:22:44 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick1: nick1 now is nick0 @22:22
+DEBUG 2020-07-08 22:22:44 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: nick1 now is nick0 @22:22
+DEBUG 2020-07-08 22:22:44 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: nick1 now is nick0 @22:22
+INFO  2020-07-08 22:26:32 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick0: /alternick nick2
+DEBUG 2020-07-08 22:26:32 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:95) - Клиент nick0: запрос на смену ника на nick2
+ERROR 2020-07-08 22:26:32 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:75) - Клиент nick0: запрос на смену ника отклонён - ник nick2 уже используется
+INFO  2020-07-08 22:27:02 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick0: /alternick nick1
+DEBUG 2020-07-08 22:27:02 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:95) - Клиент nick0: запрос на смену ника на nick1
+DEBUG 2020-07-08 22:27:02 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:63) - Клиент nick0: успешная смена ника на nick1
+INFO  2020-07-08 22:27:02 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: nick0 now is nick1 @22:27
+DEBUG 2020-07-08 22:27:02 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick0: nick0 now is nick1 @22:27
+DEBUG 2020-07-08 22:27:02 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: nick0 now is nick1 @22:27
+DEBUG 2020-07-08 22:27:02 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: nick0 now is nick1 @22:27
+INFO  2020-07-08 22:27:18 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick1: hi all
+INFO  2020-07-08 22:27:18 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: nick1: hi all @22:27
+DEBUG 2020-07-08 22:27:18 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick1: nick1: hi all @22:27
+DEBUG 2020-07-08 22:27:18 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: nick1: hi all @22:27
+DEBUG 2020-07-08 22:27:18 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: nick1: hi all @22:27
+INFO  2020-07-08 22:27:40 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick2: hi
+INFO  2020-07-08 22:27:40 [pool-2-thread-3] Chat.MyServer (MyServer.java:74) - Отправка всем: nick2: hi @22:27
+DEBUG 2020-07-08 22:27:40 [pool-2-thread-3] Chat.MyServer (MyServer.java:77) -   Клиенту nick1: nick2: hi @22:27
+DEBUG 2020-07-08 22:27:40 [pool-2-thread-3] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: nick2: hi @22:27
+DEBUG 2020-07-08 22:27:40 [pool-2-thread-3] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: nick2: hi @22:27
+INFO  2020-07-08 22:28:14 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick1: /w nick2 hi nick2
+DEBUG 2020-07-08 22:28:14 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:90) - Клиент nick1: запрос на отправку приватного сообщения пользователю nick2:  hi nick2
+INFO  2020-07-08 22:28:14 [pool-2-thread-1] Chat.MyServer (MyServer.java:107) - Отправка приватно пользователю nick2: nick1:  hi nick2
+INFO  2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick1: /end
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:99) - Клиент nick1: команда на выход из чата
+INFO  2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:61) - Клиент nick1 отключен.
+INFO  2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: /clients nick2
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: /clients nick2
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: /clients nick2
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:88) - Актуальный список клиентов разослан.
+INFO  2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: User nick1 left @22:28
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: User nick1 left @22:28
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: User nick1 left @22:28
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:116) -   Клиент nick1: входной поток закрыт.
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:118) -   Клиент nick1: выходной поток закрыт.
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:120) -   Клиент nick1: соединение закрыто.
+INFO  2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:61) - Клиент nick1 отключен.
+INFO  2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: /clients nick2
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: /clients nick2
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: /clients nick2
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:88) - Актуальный список клиентов разослан.
+INFO  2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:74) - Отправка всем: User nick1 left @22:28
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:77) -   Клиенту nick2: User nick1 left @22:28
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: User nick1 left @22:28
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:116) -   Клиент nick1: входной поток закрыт.
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:118) -   Клиент nick1: выходной поток закрыт.
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:120) -   Клиент nick1: соединение закрыто.
+DEBUG 2020-07-08 22:28:52 [pool-2-thread-1] Chat.ClientHandler (ClientHandler.java:51) - Клиентский интерфейс Socket[addr=/127.0.0.1,port=49933,localport=8189] закрыт.
+INFO  2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:130) - Клиент nick2: /end
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:99) - Клиент nick2: команда на выход из чата
+INFO  2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:61) - Клиент nick2 отключен.
+INFO  2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:74) - Отправка всем: /clients
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: /clients
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:88) - Актуальный список клиентов разослан.
+INFO  2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:74) - Отправка всем: User nick2 left @22:29
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: User nick2 left @22:29
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:116) -   Клиент nick2: входной поток закрыт.
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:118) -   Клиент nick2: выходной поток закрыт.
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:120) -   Клиент nick2: соединение закрыто.
+INFO  2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:61) - Клиент nick2 отключен.
+INFO  2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:74) - Отправка всем: /clients
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: /clients
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:88) - Актуальный список клиентов разослан.
+INFO  2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:74) - Отправка всем: User nick2 left @22:29
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.MyServer (MyServer.java:79) - Завершена отправка всем: User nick2 left @22:29
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:116) -   Клиент nick2: входной поток закрыт.
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:118) -   Клиент nick2: выходной поток закрыт.
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:120) -   Клиент nick2: соединение закрыто.
+DEBUG 2020-07-08 22:29:30 [pool-2-thread-3] Chat.ClientHandler (ClientHandler.java:51) - Клиентский интерфейс Socket[addr=/127.0.0.1,port=49974,localport=8189] закрыт.
